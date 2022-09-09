@@ -1,17 +1,15 @@
 function ModalAction(props) {
-    return (
-        <div className="modal-wrapper">
-            <div className="modal-action-form">
-                <div>You are trying to delete "{props.title}"</div>
-                <div>Are you sure?</div>
-                <div className="modal-actions">
-                    <button className="btn btn--alt"
-                        type="button">Cancel</button>
-                    <button className="btn">Confirm</button>
-                </div>
-            </div>
-        </div>
-    );
+  return (
+    <div className="modal">
+      <p>Delete "{props.cardName}"<br /><strong>Are you sure?</strong></p>
+      <button className="btn btn--alt" onClick={props.onCancel}>
+        Cancel
+      </button>
+      <button className="btn" onClick={props.onConfirm}>
+        Confirm
+      </button>
+    </div>
+  );
 }
 
 export default ModalAction;

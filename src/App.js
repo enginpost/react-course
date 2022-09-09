@@ -1,4 +1,3 @@
-import ModalAction from "./components/ModalAction";
 import Todo from "./components/Todo"
 
 function App() {
@@ -8,7 +7,6 @@ function App() {
     <Todo title="My first todo" />
     <Todo title="My second todo" />
     <Todo title="My third todo" />
-    <ModalAction title="Some Todo" />
   </div>
   );
 }
